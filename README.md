@@ -1,2 +1,2 @@
 # Studia
-Kurs: Systemy operacyjne
+Kurs: Python
