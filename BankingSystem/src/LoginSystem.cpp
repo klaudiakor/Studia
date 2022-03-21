@@ -34,9 +34,7 @@ Client LogingSystem::registration_site() {
                 account_num = tools::RandomNumber();
 
             } while (json["Accounts"].contains(std::to_string(account_num)));
-            // dopoki nie znajdzie unikalnego
 
-            // zapis do bazy danych
             tools::WriteUserDataToJson(login, "name", name);
             tools::WriteUserDataToJson(login, "surname", surname);
             tools::WriteUserDataToJson(login, "password", password);
@@ -74,7 +72,6 @@ bool LogingSystem::IsCorrectPassword(
     }
 }
 
-// szablon
 template <typename T>
 std::unique_ptr<T> get_user_from_json_helper(
     const Json& json, const std::string& login) {
