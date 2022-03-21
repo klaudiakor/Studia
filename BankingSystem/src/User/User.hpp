@@ -14,5 +14,3 @@ class User {
 
     UserData data;
 };
-
-// polimorfizm
