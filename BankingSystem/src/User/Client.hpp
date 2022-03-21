@@ -19,5 +19,5 @@ class Client : public User {
 
    private:
     std::string password;
-    Money balance;  // saldo
+    Money balance;  
 };
