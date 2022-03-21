@@ -100,7 +100,6 @@ int main(int argc, char *argv[])
         break;
     default:
     /* PROCES MACIERZYSTY */
-        /* niewielki czas uśpienia */
         sleep(1);
         int liderPID = getpgid(fork_resault); /* PID lidera grupy */
         /* czeka na procesy z grupy lidera */
@@ -121,7 +120,6 @@ int main(int argc, char *argv[])
             printf("\nGrupa procesow istnieje.\n");
             printf("Wysylam sygnal %d do grupy procesow %d\n", SignalNum, liderPID);
             /*wysyla sygnał do całej grupy procesów */
-            /* <-1 - do gr procesow PGID = -pid */
             kill(-liderPID, SignalNum);
         }
         break;
