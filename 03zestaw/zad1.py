@@ -26,5 +26,3 @@ def fibonacci(n):
 for i in range(100):
     print(fibonacci(i))
 
-
-# spr tylko to zad na zajeciach 25.11
