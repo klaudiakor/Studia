@@ -1,1 +1,2 @@
 # Studia
+Kurs: Metody numeryczne
