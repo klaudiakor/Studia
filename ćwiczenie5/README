@@ -1,7 +1,3 @@
-------------------------------------------------------------------------------
-Autor: Klaudia Korczak,                                     Kraków, 19.04.2021
-------------------------------------------------------------------------------
-
 > Zawartosc:
     
     Rozwiazania do cwiczenia 5:
@@ -31,9 +27,6 @@ Autor: Klaudia Korczak,                                     Kraków, 19.04.2021
                 
     d) in.txt - Plik tekstowy z przykladowym tekstem do odczytu. Ktory mozna
                 podac jako argument wywolania powyzszych programow.
-                
-    e) out.txt - Przykladowy plik wyjsciowy. Ktory mozna podac jako argument 
-                wywolania powyzszych programow.
 
     > (Zad: 5.B) W pliku makefile zostaly umieszczone odpowiednie komendy 
       do utworzenia potoku FIFO, uruchomienia programow producent.c
