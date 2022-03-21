@@ -12,8 +12,8 @@ class Money {
 
    public:
     Money(MoneyType amt)
-        : amount{ amt } {}  // lista inicjalizujaca konstruktora
-    Money() = default;      // konstruktor domyslny
+        : amount{ amt } {}  
+    Money() = default;      
 
     friend std::ostream& operator<<(std::ostream& stream, const Money& money) {
         stream << (money.get_amount() / 100) << '.'
@@ -50,7 +50,6 @@ class Money {
         return *this;
     }
 
-    // https://en.cppreference.com/w/cpp/language/operators
     friend Money operator+(Money lhs, const Money& rhs) {
         lhs += rhs;
         return lhs;
@@ -72,7 +71,3 @@ class Money {
    private:
     MoneyType amount{ 0 };
 };
-
-// deklaracja przyjaciela
-// wyjatek
-// przeciazanie operatorow
