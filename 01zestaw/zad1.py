@@ -14,7 +14,6 @@ def triangle(height):
 print('Prosze podac nieparzysta liczbe, ktora bedzie wysokoscia piramidy: ')
 triangle_height = input()
 
-# spr czy podana liczb jest nieparzysta
 if int(triangle_height) % 2 == 0:
     print('Liczba musi byc nieparzysta!\n')
 else:
