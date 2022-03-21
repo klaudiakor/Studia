@@ -1,0 +1,41 @@
+------------------------------------------------------------------------------
+Autor: Klaudia Korczak,                                     Kraków, 23.03.2021
+------------------------------------------------------------------------------
+
+> Zawartosc:
+    
+    Ćwiczenie 2
+        - Zad2.c - program jak z ćwiczenia 1b, wykorzystujący funkcję exec
+        - process_id.c - program wypisujący identyfikatory danego procesu
+
+-------------------------------------------------------------------------------
+
+> Jak uruchomic programy:
+    Katalog zawiera program Makefile do kompilacji, linkowania 
+    i uruchamiania powyzszych programow, a takze czyszczenia katalogu 
+    i jego archiwizacji.
+
+        - Aby uruchomić program Zad2.c, nalezy wykonac komende: make run2
+
+        - Aby skompilowac wszystkie programy 
+          nalezy wykonac:   make all
+
+        - Aby wyczyscic zawartosc katalogu (usunac zbedne pliki), 
+          nalezy wykonac:   make clean
+
+        - W celu archiwizacji oraz kompresji katalogu 
+          nalezy wykonac:   make tar
+
+--------------------------------------------------------------------------------
+
+> Odpowiedz na pytanie z cwiczenia 2:
+
+    Ile procesow powstanie przy n-krotnym wywolaniu funkcji fork-exec i dlaczego?
+
+    Powstanie n procesow. 
+    Funkcja exec zastepuje bieżący proces przez zadany program. 
+    Procesy potomne utworzone przez funkcje fork, beda zastepowane tym programem, 
+    funkcja fork nie bedzie juz na nich dzialala, wiec nie będą tworzyć kolejnych 
+    pokoleń. Tylko proces macierzysty powieli sie n razy. 
+    
+--------------------------------------------------------------------------------
