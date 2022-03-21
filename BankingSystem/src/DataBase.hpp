@@ -4,12 +4,9 @@
 
 using Json = nlohmann::json;
 
-// singleton - 1 globalny obiekt
 class DataBase {
    private:
     DataBase() { load(); }
-    // prywatny konstruktor
-    //-> jedyna mozliwosc utworzenia obiektu przez get instance
 
    public:
     ~DataBase() { save(); }  // destruktor
