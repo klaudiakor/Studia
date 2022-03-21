@@ -1,0 +1,38 @@
+> Zawartosc:
+    
+    Programy do cwiczenia 3:
+    a) Zad3a.c - program do obslugi sygnalow
+    b) Zad3b.c - program (a) uruchomiony przez funkcje exec w procesie potomnym
+    c) Zad3c.c - program, ktory w procesie macierzystym tworzy proces potomny, 
+                ktory staje sie liderem swojej grupy procesow, jego procesy
+                potomne wykonuja program do obslugi sygnalow, proces macierzysty 
+                wysyla sygnaly do calej grupy procesow potomnych
+
+-------------------------------------------------------------------------------
+
+> Jak uruchomic programy:
+    Katalog zawiera program Makefile do kompilacji, linkowania 
+    i uruchamiania powyzszych programow, a takze czyszczenia katalogu 
+    i jego archiwizacji.
+
+        - Aby skompilowac wszystkie programy 
+          nalezy wykonac:   make all
+
+        - Aby uruchomić programy, nalezy wykonac odpowiednio komende:
+            a) ./A.x [nr opcji] [nr sygnalu] 
+            b) ./B.x [nr opcji] [nr sygnalu]
+            c) ./C.x [nr opcji] [nr sygnalu]
+          
+          > mozliwe opcje obslugi:
+              1 - operacja domyslna
+              2 - ignorowanie
+              3 - wlasna obsluga sygnalu
+
+        - Aby wyczyscic zawartosc katalogu (usunac zbedne pliki), 
+          nalezy wykonac:   make clean
+
+        - W celu archiwizacji oraz kompresji katalogu 
+          nalezy wykonac:   make tar
+
+--------------------------------------------------------------------------------
+
