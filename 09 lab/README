@@ -1,1 +1,4 @@
-Szukanie pierwiastka równań, przy użyciu metod: bisekcji, falsi, siecznych, Newtona
+Szukanie pierwiastka równań:
+f(x) = sin(x) - 0.37
+g(x) = (sin(x) - 0.37)^2
+przy użyciu metod: bisekcji, falsi, siecznych, Newtona
