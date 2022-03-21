@@ -26,10 +26,3 @@ def fun(list):
 fun(list1)
 fun(list2)
 fun(list3)
-
-
-# def depth(l):
-#     if isinstance(l, list):
-#         return 1 + max(depth(item) for item in l)
-#     else:
-#         return 0
