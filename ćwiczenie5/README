@@ -1,0 +1,74 @@
+------------------------------------------------------------------------------
+Autor: Klaudia Korczak,                                     Kraków, 19.04.2021
+------------------------------------------------------------------------------
+
+> Zawartosc:
+    
+    Rozwiazania do cwiczenia 5:
+    a) Zad5A.c - Program przy pomocy potokow nazwanych (FIFO) przedstawia
+                problem "Producenta i konsumenta". Proces potomny jest 
+                producentem, pobiera po 3 znaki z wejsciowego pliku
+                tekstowego i przekazuje je za posrednictwem potoku FIFO do
+                procesu macierzystego - konsumenta, ktory zapisuje je
+                w pliku wyjsciowym. Do zasymulowania szybkosci dzialania 
+                programu, uzywa funkcji sleep z losowym czasem uspienia (0 - 2s).
+
+    b) producnet.c - Program realizujacy funkcje producenta. Otwiera plik 
+                do czytania oraz potok nazwany do pisania, podane na wejściu.
+                Uzywa funkcji sleep z losowym czasem uspienia (0 - 2s) dla 
+                zasymulowania szybkosci dzialania programu. Zapisuje do potoku
+                po 3 znaki odczytane z pliku wejsciowego. Program wypisuje 
+                na ekran przesylany "towar". Konczac dzialanie zamyka plik 
+                wejsciowy oraz potok.
+
+    c) konsument.c - Program realizujacy funkcje konsumenta. Otwiera plik 
+                do pisania oraz potok nazwany do czytania, podane na wejściu.
+                Uzywa funkcji sleep z losowym czasem uspienia (0 - 2s) dla 
+                zasymulowania szybkosci dzialania programu. Odczytuje z potoku
+                po 3 znaki i zapisuje je do pliku wyjsciowego. Program wypisuje 
+                na ekran pobierany "towar". Konczac dzialanie zamyka plik 
+                wyjsciowy oraz potok.
+                
+    d) in.txt - Plik tekstowy z przykladowym tekstem do odczytu. Ktory mozna
+                podac jako argument wywolania powyzszych programow.
+                
+    e) out.txt - Przykladowy plik wyjsciowy. Ktory mozna podac jako argument 
+                wywolania powyzszych programow.
+
+    > (Zad: 5.B) W pliku makefile zostaly umieszczone odpowiednie komendy 
+      do utworzenia potoku FIFO, uruchomienia programow producent.c
+      i konsument.c w osobnych oknach, porownania pliku wejsciowego
+      z wyjsciowym po zakonczeniu dzialania programow oraz usuniecia 
+      potoku nazwanego.
+
+-------------------------------------------------------------------------------
+
+> Jak uruchomic programy:
+    Katalog zawiera program Makefile do kompilacji, linkowania 
+    i uruchomienia powyzszych programow, a takze czyszczenia katalogu 
+    i jego archiwizacji.
+
+        - Aby skompilowac wszytkie programy 
+          nalezy wykonac:   make all
+
+        - Aby skompilowac oraz uruchomic program Zad5A.c
+          nalezy wykonac:   make runA ARGin=[1] ARGout=[2] ARGpipe=[3]
+            [1] - nazwa pliku wejsciowego (do odczytu)
+            [2] - nazwa pliku wyjsciowego (do zapisu)
+            [3] - nazwa potoku FIFO
+
+        - Aby skompilowac oraz uruchomic programy 
+          producent.c i konsument.c (zad: 5.B)
+          nalezy wykonac:   make runB ARGin=[1] ARGout=[2] ARGpipe=[3]
+            [1] - nazwa pliku wejsciowego (do odczytu)
+            [2] - nazwa pliku wyjsciowego (do zapisu)
+            [3] - nazwa potoku FIFO
+
+        - Aby wyczyscic zawartosc katalogu (usunac zbedne pliki), 
+          nalezy wykonac:   make clean
+
+        - W celu archiwizacji oraz kompresji katalogu 
+          nalezy wykonac:   make tar
+
+--------------------------------------------------------------------------------
+
