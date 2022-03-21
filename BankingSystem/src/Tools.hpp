@@ -37,4 +37,3 @@ long long int RandomNumber();
 
 }  // namespace tools
 
-// szablon
