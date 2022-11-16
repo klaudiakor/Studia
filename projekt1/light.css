@@ -1,0 +1,90 @@
+body {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+#header {
+
+    background-image: url(images/neurons-g9d69a3d05_1920.jpg);
+}
+
+#logo {
+
+    filter: brightness(0%);
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+}
+
+#brightness {
+    filter: brightness(0%)
+}
+
+/* --------about---------- */
+#about {
+    color: #000000
+}
+
+
+.subtitle {
+
+    color: rgb(0, 0, 0)
+}
+
+#resume {
+    background-color: #efefef;
+}
+
+#resume .subtitle {
+    color: #9f9f9f;
+}
+
+.resume ul li span {
+    color: #92c473;
+}
+
+
+/* -----------services------------- */
+
+.services-list div {
+    background: #efefef;
+}
+
+/* -----------portfolio------------ */
+.layer {
+    color: rgb(255, 255, 255);
+}
+
+
+/* -----------contact------------ */
+#contact {
+    background-color: #efefef;
+}
+
+.button {
+
+    background-color: #a8e880;
+    border: 0px;
+}
+
+.button:hover {
+    background: #ababab;
+}
+
+/* ------------- CSS for small screens ------------------- */
+
+@media only screen and (max-width: 650px) {
+
+    nav ul {
+        background: #92c473;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+}
