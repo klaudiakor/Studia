@@ -1,2 +1,2 @@
 # Studia
-IO - Computational Intelligence
+Kurs: Inteligencja obliczeniowa
