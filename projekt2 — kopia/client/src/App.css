@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #202020;
+  color: #cccccc;
+}
+
+.gallery {
+  width: 80vw;
+  padding-top: 20px;
+}
+
+.post {
+  width: 18vw;
+  height: 24vw;
+  float: left;
+  border-radius: 10px;
+  margin: 5px 5px 5px 5px;
+  background-color: #272727;
+}
+
+.post:hover {
+  cursor: pointer;
+  transform: scale(1.05)
+}
+
+.post .graphics {
+  margin: 10px 10px 10px 10px;
+}
+
+.post .graphics .individualImg {
+
+  object-fit: cover;
+  width: 100%;
+  height: 20vw;
+  border-radius: 8px;
+}
+
+.post .footer {
+  border-top: 2px solid #202020;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 1.3vw;
+}
+
+.graphicPage .post {
+  all: revert;
+  display: flex;
+  width: 60%;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.graphicPage .post .graphics .individualImg {
+  flex: 50%;
+  width: 50vh;
+  height: auto;
+}
+
+.graphicPage .post .description {
+  flex: 50%;
+  margin-left: 40px;
+  margin-right: 40px;
+  flex-direction: column;
+  overflow-wrap: break-word;
+}
+
+.graphicPage .post .title {
+  flex: 20%;
+  border-bottom: 2px solid #272727;
+  font-weight: bold;
+  color: #e9e9e9;
+  display: grid;
+  place-content: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.graphicPage .post .body {
+  flex: 80%;
+  display: grid;
+  place-content: center;
+  padding: 40px 25px 40px 25px;
+  overflow-wrap: break-word;
+  height: fit-content;
+}
+
+.graphicPage .post .footer {
+  flex: 20%;
+  border-top: 2px solid #272727;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.post .footer a {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.createGraphicsPage {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer {
+  background: #272727;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.formContainer #inputCreatePost {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #202020;
+  background-color: #202020;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.formContainer button {
+  margin-top: 15px;
+  height: 40px;
+  border: none;
+  background-color: #92c473;
+  border-radius: 5px;
+  color: white;
+}
+
+.formContainer button:hover {
+  cursor: pointer;
+  background-color: #a8e880;
+}
+
+
+/* menu */
+
+.menu {
+  width: 100%;
+  height: 70px;
+  background-color: #92c473;
+  display: flex;
+  align-items: center;
+
+}
+
+.menu .links {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  float: right;
+}
+
+.menu .authentication {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  float: left;
+  margin-right: 10px;
+}
+
+.menu .authentication h3 {
+  color: white;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.menu .loggedInContainer {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.menu button {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: #0000002f;
+  color: white;
+}
+
+.menu button:hover {
+  background-color: #ffffff40;
+
+}
+
+.menu h1 {
+  text-align: right;
+  margin-right: 10px;
+  color: white;
+  font-weight: lighter;
+}
+
+
+/* individual post with graphic */
+
+.graphicPage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+}
+
+.addCommentContainer {
+  width: 100vh;
+  margin-top: 25px;
+}
+
+.addCommentContainer input {
+  width: 70%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: #272727;
+  color: #cccccc;
+}
+
+.addCommentContainer button {
+  width: 25%;
+  margin-top: 0px;
+  background-color: #92c473;
+  color: white;
+  float: right;
+}
+
+.addCommentContainer button:hover {
+  background-color: #a8e880;
+}
+
+.listOfComments {
+  width: 100vh;
+}
+
+.listOfComments .comment {
+  background-color: #272727;
+  width: 100vh;
+  overflow-wrap: break-word;
+  height: hit-content;
+  padding: 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.listOfComments .comment .commentHeader {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.commentHeader .commentUsername {
+  color: #626262;
+  font-weight: bold;
+  width: 70%;
+  flex: 1;
+}
+
+.commentHeader button {
+  color: #272727;
+  background-color: #5c2424;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  margin-top: 0;
+}
+
+.commentHeader button:hover {
+  background-color: #7f3e3e;
+}
+
+#individual .title,
+#individual .footer {
+  font-size: 20px;
+}
+
+#individual .body {
+  font-size: 15px;
+}
+
+
+/* user profile */
+
+.profilePageContainer .basicInfo h1 {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profilePageContainer .graphics {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.profilePageContainer .graphics .individualImg {
+  width: 50vw;
+  padding-top: 40px;
+}
+
+
+/* login */
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.loginContainer input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px;
+  color: white;
+}
+
+.loginContainer button {
+  background-color: #92c473;
+  color: white;
+}
+
+.loginContainer button:hover {
+  background-color: #a8e880;
+}
+
+
+.loginContainer input {
+  background-color: #272727;
+}
