@@ -1,1 +1,3 @@
-### WWW - Web Techniques
+### Studia
+
+Kurs: Techniki WWW
